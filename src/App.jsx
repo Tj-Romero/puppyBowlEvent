@@ -1,6 +1,5 @@
 // Import the React library, which allows us to define components
 import React from "react";
-
 // Import the Players component, which we'll use to show a list of players
 import Players from "./features/Players";
 import Player from "./features/Player";
