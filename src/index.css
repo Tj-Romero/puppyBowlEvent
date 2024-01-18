@@ -44,7 +44,7 @@ body {
   /* The width of the card. */
   height: 380px;
   /* The height of the card. */
-  margin-left: 35%;
+  margin-inline: auto;
   /* The margin around the card. */
   background-color: #610564;
   /* The background color of the card. */
@@ -115,12 +115,60 @@ body {
 }
 h2 {
   font-size: 30px;
-  margin:-18px;
-  background-color: rgba(242, 254, 0, 1);
+  margin:0px;
+  background-color: rgb(254, 186, 0);
   width:100%;
+  font-weight: bold;
+  color: darkblue;
 }
 p {
   font-size: 20px;
   margin: 25px;
-  color:chocolate;
+  color:rgb(255, 221, 0);
+}
+
+.intro p {
+  font-size: 20px;
+  margin: 25px;
+  color: gold;
+  background-color: cadetblue;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  display: center; 
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.player-id {
+  font-style: italic;
+  color:crimson;
+  font-size: 35px;
+}
+
+.player-breed {
+  font-size: 18px;
+  margin: 5px 0;
+  color:red;
+}
+.player-status {
+  font-size: 18px;
+  margin: 5px 0;
+  color:red;
+}
+
+.players-details .breed {
+  margin: 10px;
+  padding: 5px 0;
+}
+.players-details .status {
+  margin: -18px;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .intro span {
+    font-size: 18px;
+    margin: 15px;
+    padding: 8px 15px;
+  }
 }

@@ -5,7 +5,8 @@ const playerSlice = createSlice({
     name:"player",
     initialState:[],
     extraReducers:(builder)=>{
-        builder.addMatcher(puppyBowlApi.endpoints.fetchPlayer.matchFulfilled, (state, {payload})=>{
+        builder.addMatcher(puppyBowlApi.endpoints.fetchPlayers.matchFulfilled, (state, {payload})=>{
+            console.log(payload.data)
             return payload.data.players
 
         })

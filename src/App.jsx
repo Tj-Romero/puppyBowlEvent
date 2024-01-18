@@ -3,7 +3,7 @@ import React from "react";
 
 // Import the Players component, which we'll use to show a list of players
 import Players from "./features/Players";
-
+import Player from "./features/Player";
 // Import Routes
 import { Routes, Route } from "react-router-dom";
 
@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route index element={<Players />} />
-          {/* <Route path={"/players/:id"} element={<Players />} /> */}
+          <Route path={"/player/:id"} element={<Player />} />
         </Routes>
       </div>
     </div>
